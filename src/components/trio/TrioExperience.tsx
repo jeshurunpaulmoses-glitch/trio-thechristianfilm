@@ -63,6 +63,6 @@ export function TrioExperience() {
       <section className="final-section"><div><p>{c.finalMessage[0]}</p><h2>{c.finalMessage[1]}</h2></div><div className="final-lockup"><strong>{c.film.title}</strong><p>{c.film.tagline.replace("\n", " ")}</p><span>{c.film.releaseStatus}</span></div></section>
     </main>
     <footer><strong>TRIO</strong><span>{c.film.copyright}</span><nav aria-label="Footer navigation">{c.socials.map(link => <a key={link.label} href={link.href}>{link.label}</a>)}</nav></footer>
-    <TrailerModal open={trailer} onClose={() => setTrailer(false)}/>{lightbox !== null && <div className="lightbox" role="dialog" aria-modal="true" aria-label="Production image"><Button variant="iconGhost" size="icon" onClick={() => setLightbox(null)} aria-label="Close image"><X /></Button><Placeholder media={c.behind.images[lightbox]}/><span>{c.behind.images[lightbox]?.label}</span></div>}
+    <TrailerModal open={trailer} onClose={() => setTrailer(false)}/>{lightbox !== null && c.behind.images[lightbox] && <div className="lightbox" role="dialog" aria-modal="true" aria-label="Production image"><Button variant="iconGhost" size="icon" onClick={() => setLightbox(null)} aria-label="Close image"><X /></Button><Placeholder media={c.behind.images[lightbox]}/><span>{c.behind.images[lightbox].label}</span></div>}
   </div>;
 }
