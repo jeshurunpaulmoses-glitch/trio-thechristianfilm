@@ -1,6 +1,15 @@
+import firstLook from "@/assets/trio-first-look.jpg.asset.json";
+
 export type MediaAsset = { src: string; alt: string; label: string };
 
 const placeholder = (label: string, alt: string): MediaAsset => ({ src: "", alt, label });
+
+/** Official TRIO first-look key art. */
+export const firstLookArt: MediaAsset = {
+  src: firstLook.url,
+  alt: "TRIO official first look poster — Bible Way Galaxy presents a J³ film",
+  label: "OFFICIAL FIRST LOOK",
+};
 
 export const trioContent = {
   film: {
