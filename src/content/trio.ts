@@ -87,7 +87,7 @@ export const trioContent = {
     copy: "Jeshurun, Jabin and Jeremy form a collaborative filmmaking identity united by faith, craft and a shared vision for the screen.",
     names: ["JESHURUN", "JABIN", "JEREMY"],
   },
-  trailer: { eyebrow: "THE WORLD OF TRIO AWAITS.", heading: "ENTER THE WORLD\nOF TRIO.", poster: placeholder("OFFICIAL TEASER POSTER", "TRIO teaser poster") },
+  trailer: { eyebrow: "THE WORLD OF TRIO AWAITS.", heading: "ENTER THE WORLD\nOF TRIO.", poster: firstLookArt },
   credits: [
     { role: "CAST", names: ["Jeshurun Paul Moses", "Jabin Jason Samuel", "Jeremy Gladson", "Leon Daniel Priyan", "Frank Jason", "Brendan Raj Vijay"] },
     { role: "DIRECTOR / SCREENPLAY", names: ["Jeshurun Paul Moses"] },
