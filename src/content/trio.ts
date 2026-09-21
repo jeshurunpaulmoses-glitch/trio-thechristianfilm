@@ -1,6 +1,15 @@
+import firstLook from "@/assets/trio-first-look.jpg.asset.json";
+
 export type MediaAsset = { src: string; alt: string; label: string };
 
 const placeholder = (label: string, alt: string): MediaAsset => ({ src: "", alt, label });
+
+/** Official TRIO first-look key art. */
+export const firstLookArt: MediaAsset = {
+  src: firstLook.url,
+  alt: "TRIO official first look poster — Bible Way Galaxy presents a J³ film",
+  label: "OFFICIAL FIRST LOOK",
+};
 
 export const trioContent = {
   film: {
@@ -24,8 +33,8 @@ export const trioContent = {
   ],
   ctas: { watch: "WATCH THE TEASER", explore: "EXPLORE TRIO" },
   intro: { presenter: "BIBLE WAY GALAXY PRESENTS", system: "D6 // SYSTEM INITIALIZED", skip: "SKIP INTRO" },
-  heroMedia: placeholder("OFFICIAL KEY ART", "TRIO official key art"),
-  poster: placeholder("OFFICIAL FILM POSTER", "TRIO official film poster"),
+  heroMedia: firstLookArt,
+  poster: firstLookArt,
   story: {
     label: "01 / THE STORY",
     heading: "A WORLD HAS CHOSEN TO BOW.\nTHREE MEN CHOOSE TO STAND.",
@@ -78,7 +87,7 @@ export const trioContent = {
     copy: "Jeshurun, Jabin and Jeremy form a collaborative filmmaking identity united by faith, craft and a shared vision for the screen.",
     names: ["JESHURUN", "JABIN", "JEREMY"],
   },
-  trailer: { eyebrow: "THE WORLD OF TRIO AWAITS.", heading: "ENTER THE WORLD\nOF TRIO.", poster: placeholder("OFFICIAL TEASER POSTER", "TRIO teaser poster") },
+  trailer: { eyebrow: "THE WORLD OF TRIO AWAITS.", heading: "ENTER THE WORLD\nOF TRIO.", poster: firstLookArt },
   credits: [
     { role: "CAST", names: ["Jeshurun Paul Moses", "Jabin Jason Samuel", "Jeremy Gladson", "Leon Daniel Priyan", "Frank Jason", "Brendan Raj Vijay"] },
     { role: "DIRECTOR / SCREENPLAY", names: ["Jeshurun Paul Moses"] },
