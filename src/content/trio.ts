@@ -33,8 +33,8 @@ export const trioContent = {
   ],
   ctas: { watch: "WATCH THE TEASER", explore: "EXPLORE TRIO" },
   intro: { presenter: "BIBLE WAY GALAXY PRESENTS", system: "D6 // SYSTEM INITIALIZED", skip: "SKIP INTRO" },
-  heroMedia: placeholder("OFFICIAL KEY ART", "TRIO official key art"),
-  poster: placeholder("OFFICIAL FILM POSTER", "TRIO official film poster"),
+  heroMedia: firstLookArt,
+  poster: firstLookArt,
   story: {
     label: "01 / THE STORY",
     heading: "A WORLD HAS CHOSEN TO BOW.\nTHREE MEN CHOOSE TO STAND.",
