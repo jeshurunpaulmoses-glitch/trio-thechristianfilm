@@ -163,7 +163,8 @@
 .intro-sequence p,.intro-sequence h1,.intro-sequence .intro-tagline,.intro-sequence small { opacity:0; }
 .intro-sequence p { font: 600 .72rem var(--font-sans); letter-spacing:.32em; animation: intro-fade 1.2s .3s forwards; }
 .intro-sequence h1 { margin:.4rem 0; animation: intro-title 1.5s 1.4s forwards; }
-.title-mark { display:block; width:auto; height:auto; object-fit:contain; }
+.title-mark { display:block; width:auto; height:auto; overflow:hidden; background:var(--background); }
+.title-mark>img { display:block; width:100%; height:100%; object-fit:contain; mix-blend-mode:screen; image-rendering:auto; }
 .intro-title-mark { width:clamp(12rem,32vw,26rem); max-height:48vh; margin:0 auto; }
 .intro-tagline { display:flex; flex-direction:column; font-size:clamp(1.1rem,3vw,2rem); font-weight:600; line-height:1; letter-spacing:.12em; animation:intro-fade 1s 2.7s forwards; }
 .intro-sequence small { display:block; margin-top:2rem; color:var(--primary); font:500 .58rem var(--font-sans); letter-spacing:.25em; animation:intro-fade .8s 3.7s forwards; }
