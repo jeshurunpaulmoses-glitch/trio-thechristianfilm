@@ -3,7 +3,7 @@ import { ArrowDown, ArrowRight, Menu, Play, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { trioContent as c, type MediaAsset } from "@/content/trio";
 import { cn } from "@/lib/utils";
-import trioLogo from "@/assets/trio-logo-exact.png.asset.json";
+import trioLogo from "@/assets/trio-official-title.png.asset.json";
 
 function Placeholder({ media, className = "" }: { media: MediaAsset; className?: string }) {
   if (media.src) return <img src={media.src} alt={media.alt} className={cn("h-full w-full object-cover", className)} loading="lazy" />;
