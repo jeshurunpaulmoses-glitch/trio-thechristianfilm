@@ -1,17 +1,26 @@
-import firstLook from "@/assets/trio-first-look.jpg.asset.json";
-
 export type MediaAsset = { src: string; alt: string; label: string };
 
 const placeholder = (label: string, alt: string): MediaAsset => ({ src: "", alt, label });
 
 /** Official TRIO first-look key art. */
 export const firstLookArt: MediaAsset = {
-  src: firstLook.url,
+  src: "/images/TRIO landscape.png",
   alt: "TRIO official first look poster — Bible Way Galaxy presents a J³ film",
   label: "OFFICIAL FIRST LOOK",
 };
 
+/** Official transparent TRIO title logo. */
+export const trioLogo = {
+  src: "/images/trio-logo.png",
+  alt: "TRIO",
+  width: 852,
+  height: 750,
+} as const;
+
 export const trioContent = {
+  branding: {
+    logo: trioLogo,
+  },
   film: {
     title: "TRIO",
     studio: "BIBLE WAY GALAXY",
@@ -21,7 +30,7 @@ export const trioContent = {
     inspiration: "Inspired by Daniel 3 × Revelation 13",
     releaseStatus: "COMING SOON",
     releaseDate: "",
-    teaserUrl: "",
+    teaserUrl: "https://www.youtube.com/embed/oQ8fd7MQh9I?autoplay=1&rel=0",
     copyright: "TRIO © 2026 Bible Way Galaxy",
   },
   navigation: [
@@ -32,7 +41,7 @@ export const trioContent = {
     { label: "WATCH", href: "#watch" },
   ],
   ctas: { watch: "WATCH THE TEASER", explore: "EXPLORE TRIO" },
-  intro: { presenter: "BIBLE WAY GALAXY PRESENTS", system: "D6 // SYSTEM INITIALIZED", skip: "SKIP INTRO" },
+  intro: { presenter: "BIBLE WAY GALAXY PRESENTS", system: "WELCOME TO THE WORLD OF TRIO", skip: "SKIP INTRO" },
   heroMedia: firstLookArt,
   poster: firstLookArt,
   story: {
@@ -43,17 +52,29 @@ export const trioContent = {
       "Three men are faced with a single demand: bow with everyone else—or stand together for the God they refuse to deny.",
     ],
     beats: ["THE WORLD BOWED.", "THREE DIDN’T.", "THE SYSTEM NOTICED."],
-    media: placeholder("OFFICIAL STORY STILL", "A cinematic still from TRIO"),
+    media: {
+  src: "/images/IMG_7435.JPG",
+  alt: "Official story still from TRIO",
+  label: "OFFICIAL STORY STILL",
+},
   },
   world: {
     label: "02 / THE WORLD",
     heading: "ENTER THE WORLD\nOF TRIO",
     copy: "Every system has rules.\nEvery rule demands obedience.",
     cards: [
-      { title: "DOMINOR", code: "CLASSIFIED / FILE 01", description: "The corporate authority at the center of a world built on total compliance.", media: placeholder("DOMINOR", "Dominor world artwork") },
-      { title: "ACT 138A", code: "MANDATE / FILE 02", description: "A law that turns public allegiance into an unavoidable act of submission.", media: placeholder("ACT 138A", "Act 138A world artwork") },
+      { title: "DOMINOR", code: "CLASSIFIED / FILE 01", description: "The corporate authority at the center of a world built on total compliance.", media: {
+  src: "/images/WORLD/DOMINOR 2.JPG",
+  alt: "Dominor",
+  label: "DOMINOR",
+}, },
+      { title: "ACT 138A", code: "MANDATE / FILE 02", description: "A law that turns public allegiance into an unavoidable act of submission.", media:  placeholder("ACT 138A", "Act 138A world artwork") },
       { title: "D6 ECONOMIC CARD", code: "D6 DATABASE / FILE 03", description: "An identity system controlling who may buy, sell, work and participate.", media: placeholder("D6 SYSTEM", "D6 economic card artwork") },
-      { title: "THE THREE", code: "ACCESS RESTRICTED", description: "Three men whose refusal exposes the limit of a system built to own belief.", media: placeholder("THE THREE", "The three central figures") },
+      { title: "THE THREE", code: "ACCESS RESTRICTED", description: "Three men whose refusal exposes the limit of a system built to own belief.", media: {
+  src: "/images/WORLD/TRIO 2.png",
+  alt: "THE THREE",
+  label: "The three central figures",
+}, }
     ],
   },
   characters: {
@@ -83,16 +104,16 @@ export const trioContent = {
   },
   creators: {
     title: "J³",
-    subtitle: "A J CUBE FILM",
+    subtitle: "A J³ FILM",
     copy: "Jeshurun, Jabin and Jeremy form a collaborative filmmaking identity united by faith, craft and a shared vision for the screen.",
     names: ["JESHURUN", "JABIN", "JEREMY"],
   },
   trailer: { eyebrow: "THE WORLD OF TRIO AWAITS.", heading: "ENTER THE WORLD\nOF TRIO.", poster: firstLookArt },
   credits: [
-    { role: "CAST", names: ["Jeshurun Paul Moses", "Jabin Jason Samuel", "Jeremy Gladson", "Leon Daniel Priyan", "Frank Jason", "Brendan Raj Vijay"] },
+    { role: "CAST", names: ["Jeshurun Paul Moses", "Jabin Jason Samuel", "Jeremy Gladson", "Leon Daniel", "Priyan Frank", "Jason Brendan", "Raj Vijay"] },
     { role: "DIRECTOR / SCREENPLAY", names: ["Jeshurun Paul Moses"] },
     { role: "DIRECTOR OF PHOTOGRAPHY", names: ["Richard Davidson"] },
-    { role: "ORIGINAL MUSIC", names: ["Jabsam Musicals"] },
+    { role: "ORIGINAL SCORE", names: ["Jabsam Musicals"] },
     { role: "OST SUPERVISOR", names: ["Jabin Samuel"] },
     { role: "CREATIVE DIRECTION & PRODUCTION MANAGER", names: ["Jeremy Gladson"] },
     { role: "EDITING / VFX / PUBLICITY DESIGN", names: ["Jeshurun Paul Moses"] },
