@@ -1,6 +1,7 @@
 # Adding Your Pictures & Videos to TRIO
 
 ## How it works today
+
 Every image/video slot on the site reads from one file: `src/content/trio.ts`.
 Each placeholder looks like this:
 
@@ -20,6 +21,7 @@ A placeholder has an empty `src`. As soon as a slot has a real `src`, the site a
    - `public/video` — any video files
 
 2. **I update `src/content/trio.ts`** so the matching slot points at your file. Example:
+
    ```ts
    heroMedia: { src: heroAsset.url, alt: "TRIO official key art", label: "OFFICIAL KEY ART" },
    ```
@@ -27,6 +29,7 @@ A placeholder has an empty `src`. As soon as a slot has a real `src`, the site a
 3. **The placeholder disappears** and your media shows in the correct cinematic treatment everywhere it is used.
 
 ## Specific swaps you can ask for
+
 - **Hero image or video** — one line in `trio.ts` (`heroMedia`). Video can be added with autoplay/muted/loop behavior.
 - **Teaser/trailer** — if it's on YouTube or Vimeo, just paste the link; I set `film.teaserUrl` and the WATCH TEASER button + modal start playing it instantly. No file upload needed.
 - **Character portraits** — the three `people` entries under `characters`.
@@ -34,9 +37,11 @@ A placeholder has an empty `src`. As soon as a slot has a real `src`, the site a
 - **World cards** — four image slots under `world.cards`.
 
 ## Tips for best results
+
 - Landscape (16:9 or wider) for hero and story stills; portrait (2:3 or 3:4) for character portraits.
 - JPG for photos (smaller files); MP4/WebM for video.
 - High resolution is fine — I optimize on upload.
 
 ## Ready when you are
+
 Attach your first assets in chat (up to 10 files per message, 20MB each) or paste a YouTube/Vimeo teaser link, and I'll wire them in.

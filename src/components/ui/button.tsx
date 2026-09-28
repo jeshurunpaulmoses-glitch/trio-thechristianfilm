@@ -16,9 +16,12 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cinematic: "rounded-none border border-primary bg-primary text-primary-foreground shadow-none hover:bg-primary/85",
-        cinematicGhost: "rounded-none border border-border/70 bg-transparent text-foreground shadow-none hover:border-primary hover:text-primary",
-        iconGhost: "rounded-none bg-transparent text-foreground shadow-none hover:bg-accent hover:text-accent-foreground",
+        cinematic:
+          "rounded-none border border-primary bg-primary text-primary-foreground shadow-none hover:bg-primary/85",
+        cinematicGhost:
+          "rounded-none border border-border/70 bg-transparent text-foreground shadow-none hover:border-primary hover:text-primary",
+        iconGhost:
+          "rounded-none bg-transparent text-foreground shadow-none hover:bg-accent hover:text-accent-foreground",
         play: "rounded-full border border-foreground/50 bg-background/30 text-foreground shadow-none backdrop-blur-sm hover:border-primary hover:bg-primary hover:text-primary-foreground",
       },
       size: {

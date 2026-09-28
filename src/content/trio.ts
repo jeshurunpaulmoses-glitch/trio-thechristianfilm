@@ -37,11 +37,16 @@ export const trioContent = {
     { label: "STORY", href: "#story" },
     { label: "WORLD", href: "#world" },
     { label: "THE THREE", href: "#the-three" },
+    { label: "FUNDING & CONTRIBUTION", href: "#funding" },
     { label: "VISION", href: "#vision" },
     { label: "WATCH", href: "#watch" },
   ],
   ctas: { watch: "WATCH THE TEASER", explore: "EXPLORE TRIO" },
-  intro: { presenter: "BIBLE WAY GALAXY PRESENTS", system: "WELCOME TO THE WORLD OF TRIO", skip: "SKIP INTRO" },
+  intro: {
+    presenter: "BIBLE WAY GALAXY PRESENTS",
+    system: "WELCOME TO THE WORLD OF TRIO",
+    skip: "SKIP INTRO",
+  },
   heroMedia: firstLookArt,
   poster: firstLookArt,
   story: {
@@ -53,36 +58,62 @@ export const trioContent = {
     ],
     beats: ["THE WORLD BOWED.", "THREE DIDN’T.", "THE SYSTEM NOTICED."],
     media: {
-  src: "/images/IMG_7435.JPG",
-  alt: "Official story still from TRIO",
-  label: "OFFICIAL STORY STILL",
-},
+      src: "/images/IMG_7435.JPG",
+      alt: "Official story still from TRIO",
+      label: "OFFICIAL STORY STILL",
+    },
   },
   world: {
     label: "02 / THE WORLD",
     heading: "ENTER THE WORLD\nOF TRIO",
     copy: "Every system has rules.\nEvery rule demands obedience.",
     cards: [
-      { title: "DOMINOR", code: "CLASSIFIED / FILE 01", description: "The corporate authority at the center of a world built on total compliance.", media: {
-  src: "/images/WORLD/DOMINOR 2.JPG",
-  alt: "Dominor",
-  label: "DOMINOR",
-}, },
-      { title: "ACT 138A", code: "MANDATE / FILE 02", description: "A law that turns public allegiance into an unavoidable act of submission.", media:  placeholder("ACT 138A", "Act 138A world artwork") },
-      { title: "D6 ECONOMIC CARD", code: "D6 DATABASE / FILE 03", description: "An identity system controlling who may buy, sell, work and participate.", media: placeholder("D6 SYSTEM", "D6 economic card artwork") },
-      { title: "THE THREE", code: "ACCESS RESTRICTED", description: "Three men whose refusal exposes the limit of a system built to own belief.", media: {
-  src: "/images/WORLD/TRIO 2.png",
-  alt: "THE THREE",
-  label: "The three central figures",
-}, }
+      {
+        title: "DOMINOR",
+        code: "CLASSIFIED / FILE 01",
+        description: "The corporate authority at the center of a world built on total compliance.",
+        media: {
+          src: "/images/WORLD/DOMINOR 2.JPG",
+          alt: "Dominor",
+          label: "DOMINOR",
+        },
+      },
+      {
+        title: "ACT 138A",
+        code: "MANDATE / FILE 02",
+        description: "A law that turns public allegiance into an unavoidable act of submission.",
+        media: placeholder("ACT 138A", "Act 138A world artwork"),
+      },
+      {
+        title: "D6 ECONOMIC CARD",
+        code: "D6 DATABASE / FILE 03",
+        description: "An identity system controlling who may buy, sell, work and participate.",
+        media: placeholder("D6 SYSTEM", "D6 economic card artwork"),
+      },
+      {
+        title: "THE THREE",
+        code: "ACCESS RESTRICTED",
+        description: "Three men whose refusal exposes the limit of a system built to own belief.",
+        media: {
+          src: "/images/WORLD/TRIO 2.png",
+          alt: "THE THREE",
+          label: "The three central figures",
+        },
+      },
     ],
   },
   characters: {
     label: "03 / THE THREE",
     heading: "THREE MEN.\nONE STAND.\nONE GOD.",
     people: [
-      { name: "Jeshurun Paul Moses", image: placeholder("PORTRAIT 01", "Jeshurun Paul Moses in TRIO") },
-      { name: "Jabin Jason Samuel", image: placeholder("PORTRAIT 02", "Jabin Jason Samuel in TRIO") },
+      {
+        name: "Jeshurun Paul Moses",
+        image: placeholder("PORTRAIT 01", "Jeshurun Paul Moses in TRIO"),
+      },
+      {
+        name: "Jabin Jason Samuel",
+        image: placeholder("PORTRAIT 02", "Jabin Jason Samuel in TRIO"),
+      },
       { name: "Jeremy Gladson", image: placeholder("PORTRAIT 03", "Jeremy Gladson in TRIO") },
     ],
   },
@@ -92,7 +123,12 @@ export const trioContent = {
     heading: "FROM SCRIPT\nTO SCREEN.",
     copy: "TRIO is an independently produced film shaped through faith, collaboration and ambitious filmmaking.",
     stages: ["CONCEPT", "PRODUCTION", "VFX", "FINAL FILM"],
-    images: Array.from({ length: 7 }, (_, index) => placeholder(`PRODUCTION FRAME 0${index + 1}`, `Behind the scenes of TRIO, frame ${index + 1}`)),
+    images: Array.from({ length: 7 }, (_, index) =>
+      placeholder(
+        `PRODUCTION FRAME 0${index + 1}`,
+        `Behind the scenes of TRIO, frame ${index + 1}`,
+      ),
+    ),
   },
   vision: {
     label: "05 / THE VISION",
@@ -108,9 +144,24 @@ export const trioContent = {
     copy: "Jeshurun, Jabin and Jeremy form a collaborative filmmaking identity united by faith, craft and a shared vision for the screen.",
     names: ["JESHURUN", "JABIN", "JEREMY"],
   },
-  trailer: { eyebrow: "THE WORLD OF TRIO AWAITS.", heading: "ENTER THE WORLD\nOF TRIO.", poster: firstLookArt },
+  trailer: {
+    eyebrow: "THE WORLD OF TRIO AWAITS.",
+    heading: "ENTER THE WORLD\nOF TRIO.",
+    poster: firstLookArt,
+  },
   credits: [
-    { role: "CAST", names: ["Jeshurun Paul Moses", "Jabin Jason Samuel", "Jeremy Gladson", "Leon Daniel", "Priyan Frank", "Jason Brendan", "Raj Vijay"] },
+    {
+      role: "CAST",
+      names: [
+        "Jeshurun Paul Moses",
+        "Jabin Jason Samuel",
+        "Jeremy Gladson",
+        "Leon Daniel",
+        "Priyan Frank",
+        "Jason Brendan",
+        "Raj Vijay",
+      ],
+    },
     { role: "DIRECTOR / SCREENPLAY", names: ["Jeshurun Paul Moses"] },
     { role: "DIRECTOR OF PHOTOGRAPHY", names: ["Richard Davidson"] },
     { role: "ORIGINAL SCORE", names: ["Jabsam Musicals"] },

@@ -10,25 +10,25 @@ Do not simplify the creative direction into a generic landing-page template.
 
 For the initial build, focus first on:
 
- Navigation
+Navigation
 
- Intro sequence
+Intro sequence
 
- Hero
+Hero
 
- Story
+Story
 
- World of TRIO
+World of TRIO
 
- The Three
+The Three
 
- Behind TRIO
+Behind TRIO
 
- Vision
+Vision
 
- Trailer
+Trailer
 
- Credits/footer
+Credits/footer
 
 Create the complete page structure and establish the final design system before adding expensive secondary effects.
 
@@ -38,35 +38,35 @@ EDITABILITY IS A CORE REQUIREMENT
 
 Centralize all frequently changed TRIO content in a clearly organized data/config structure. This should include:
 
- film title
+film title
 
- tagline
+tagline
 
- synopsis
+synopsis
 
- release status/date
+release status/date
 
- teaser/trailer URL
+teaser/trailer URL
 
- hero media
+hero media
 
- posters
+posters
 
- character images
+character images
 
- BTS images
+BTS images
 
- cast
+cast
 
- crew
+crew
 
- credits
+credits
 
- social links
+social links
 
- CTA labels
+CTA labels
 
- section copy
+section copy
 
 Do not scatter this content throughout components.
 
